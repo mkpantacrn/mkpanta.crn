@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #FFF;
+	width: 100%;
+	
+}
+html{
+	overflow-x: hidden;
+}
+
+header{
+	width: 100%;
+	height: 200px;
+	background: #F67D29;
+
+}
+
+
+.contenedor{
+	width: 12%;
+	height: 10%;
+	float: left;
+	
+}
+.contenidor{
+	width: 12%;
+	height: 10%;
+	float: right;
+	 
+}
+
+
+/*menú principal*/
+
+#menu_de{
+	display: none;
+	position: absolute;
+    clip: rect(0, 0, 0, 0);
+	
+	top:-100px;
+}
+.icon-menu-outline{
+	z-index: 1000px;
+	top: 0;
+	left: 0;
+	position: relative;
+	font-size: 2em;
+	color: black;
+}
+
+header label{
+	float: left;
+	cursor: pointer;
+}
+
+.menu{	
+	position: absolute;
+	z-index:100;
+	top: 150px;
+	left: 0;
+	padding: 0;
+	width: 30%;
+	background-color: rgba(0,0,0,1);
+	transition: all 0.3s;
+	transform: translateX(-100%);
+}
+
+.menu a:hover{
+	background-color: rgba(245,153,33,1);
+	text-decoration: white;
+}
+
+.menu a{
+	line-height: 200%;
+	margin-top:3%;
+	font-size: 1em;
+	font-size: ;
+	display: block;
+	color:white;
+	text-decoration: none;
+	height: 50%;
+	padding: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#menu_de:checked ~ .menu {
+	transform: translateX(0%);
+
+}
+
+/*menú secundario*/
+
+
+#menu_i{
+	display: none;
+	position: absolute;
+    clip: rect(0, 0, 0, 0);
+	
+	top:-100px;
+}
+.icon-adjust{
+	z-index: 1000px;
+	right: 0;
+	position: relative;
+	font-size: 2em;
+	color: black;
+}
+
+header label{
+	float: left;
+	cursor: pointer;
+}
+
+.info{	
+
+	position: absolute;	
+	right: 0;
+	top: 150px;	
+	padding: 0;
+	width: 30%;
+	background-color: rgba(0,0,0,1);
+	transition: all 0.3s;
+	transform: translateX(100%);
+	z-index:1000;
+
+}
+
+
+.info a:hover{
+	background-color: rgba(245,153,33,1);
+	text-decoration: white;
+
+}
+
+.info a{
+	line-height: 200%;
+	margin-top:3%;
+	font-size: 1em;
+	font-size: ;
+	display: block;
+	color:White;
+
+	text-decoration: none;
+	height: 50%;
+	padding: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#menu_i:checked ~ .info {
+	transform: translateX(0%);
+
+}
+
+
+/*Buscador */
+
+#barrabusca{
+	width: 75%;	
+	float: left;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.flexsearch-wrapper {
+	height: auto;
+	width: 90%;	
+	margin:0 auto;
+	overflow: hidden;
+	background: transparent;	
+}
+	
+.flexsearch--form {
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; 
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+.flexsearch {
+  padding: 0 25px 0 200px; 
+}
+
+/* caja*/
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 0 46px 0 10px;
+  
+  border-color: #888;
+  border-radius: 35px;  
+  border-style: solid;
+  border-width: 5px;
+
+
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+	
+}
+
+/*flecha*/
+.flexsearch--submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 60px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  margin-right: 5px; 
+  background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+/*barra dansa */
+#fotografia{
+	margin-top: 10px;
+	clear: both;
+	color:white;
+	height: 40px;
+	width: 100%;
+	background: #F67D29;
+	text-align: center;
+
+
+}
+
+/*videos*/
+
+div.uno{
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	width: 300px;
+	height: 300px;
+	top: 400px;
+	margin: 60px 30px 0px 20px;
+	padding: auto;
+	background-image: url(../imagenes/im.png);
+	cursor: pointer;
+
+}
+
+div.dos{
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	width: 300px;
+	height: 300px;
+	top: 400px;
+	margin: 60px 30px 0px 20px;
+	padding: auto;
+	background-image: url(../imagenes/img22.png);
+	cursor: pointer;
+
+}
+
+div.tres{
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	width: 300px;
+	height: 300px;
+	top: 400px;
+	margin: 60px 30px 0px 20px;
+	padding: auto;
+	background-image: url(../imagenes/img33.png);
+	cursor: pointer;
+
+}
+
+div.cuatro{
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	width: 300px;
+	height: 300px;
+	top: 400px;
+	margin: 60px 30px 0px 20px;
+	padding: auto;
+	background-image: url(../imagenes/img44.png);
+	cursor: pointer;
+
+}
+
+
+@media screen and (min-width:768px){
+  #videos{
+    margin: 20px 50px auto;
+    float: left;      
+  }
+}
+
+
+/*Hover videos*/
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 300px;
+  height: 300px;
+
+  background-color: rgba(255,255,255,0.5);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#videos:hover div#info {
+  opacity:1;
+
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1em;
+  margin-left: 105px;
+  margin-top: 250px;
+  transition: margin-left 0.3s;
+}
+
+div#video:hover p#titulo {
+  margin-right: 25px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 200px;
+  transition: margin-top 0.4s;
+}
+
+div#videos:hover p#descripcion {
+  margin-top: 190px;
+}
+
+
+/*flechas*/
+
+
+
+.flecha_izquierda{
+  width: 5px;
+  height: 5px;
+  
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right:20px solid #000;
+
+}
+
+@media screen and (min-width:768px){
+  
+ 
+  .flecha_izquierda{
+    clear: both;
+  }

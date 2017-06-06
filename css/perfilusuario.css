@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #FFF;
+	width: 100%;
+	
+}
+html{
+	overflow-x: hidden;
+}
+
+header{
+	width: 100%;
+	height: 200px;
+	background: #F67D29;
+
+}
+
+
+.contenedor{
+	width: 12%;
+	height: 10%;
+	float: left;
+	
+}
+.contenidor{
+	width: 12%;
+	height: 10%;
+	float: right;
+	 
+}
+
+
+/*menú principal*/
+
+#menu_de{
+	display: none;
+	position: absolute;
+    clip: rect(0, 0, 0, 0);
+	
+	top:-100px;
+}
+.icon-menu-outline{
+	z-index: 1000px;
+	top: 0;
+	left: 0;
+	position: relative;
+	font-size: 2em;
+	color: black;
+}
+
+header label{
+	float: left;
+	cursor: pointer;
+}
+
+.menu{	
+	position: absolute;
+	z-index:100;
+	top: 150px;
+	left: 0;
+	padding: 0;
+	width: 30%;
+	background-color: rgba(0,0,0,1);
+	transition: all 0.3s;
+	transform: translateX(-100%);
+}
+
+.menu a:hover{
+	background-color: rgba(245,153,33,1);
+	text-decoration: white;
+}
+
+.menu a{
+	line-height: 200%;
+	margin-top:3%;
+	font-size: 1em;
+	font-size: ;
+	display: block;
+	color:White;
+	text-decoration: none;
+	height: 50%;
+	padding: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#menu_de:checked ~ .menu {
+	transform: translateX(0%);
+
+}
+
+/*menú secundario*/
+
+
+#menu_i{
+	display: none;
+	position: absolute;
+    clip: rect(0, 0, 0, 0);
+	
+	top:-100px;
+}
+.icon-adjust{
+	z-index: 1000px;
+	right: 0;
+	position: relative;
+	font-size: 2em;
+	color: black;
+}
+
+header label{
+	float: left;
+	cursor: pointer;
+}
+
+.info{	
+
+	position: absolute;	
+	right: 0;
+	top: 150px;	
+	padding: 0;
+	width: 30%;
+	background-color: rgba(0,0,0,1);
+	transition: all 0.3s;
+	transform: translateX(100%);
+	z-index:1000;
+
+}
+
+
+.info a:hover{
+	background-color: rgba(245,153,33,1);
+	text-decoration: white;
+
+}
+
+.info a{
+	line-height: 200%;
+	margin-top:3%;
+	font-size: 1em;
+	font-size: ;
+	display: block;
+	color:white;
+
+	text-decoration: none;
+	height: 50%;
+	padding: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#menu_i:checked ~ .info {
+	transform: translateX(0%);
+
+}
+
+
+/* Imagen */
+
+#perfil{
+	margin: 0 auto;
+	margin-top: 5%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#perfil img{
+	margin: 0 auto;
+
+	border-radius: 20%;
+
+}
+
+
+
+
+#texto p{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color:#000;	
+	
+	font-size: 1em;
+}
+
+/*barra secundaria*/
+
+#barra{
+	margin-top: 80px;
+	background: #000;
+	height: 5px;
+	
+}
+
+
+
+/*videos */
+
+div.uno{
+	background-repeat: no-repeat;
+	width: 300px;
+	height:300px;
+	
+	margin: 20px 10px auto;
+	
+	background-image: url(../imagenes/mm.png);
+}
+	
+/*videos secundarios*/
+#vidoes{
+	width: 100%;
+}
+
+.di{
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 40px 30px auto;
+	background-image: url(../imagenes/k.png);
+}
+
+
+@media screen and (min-width:768px){
+  
+    
+	div.uno{
+		width: 30%;
+		margin: 20px auto;
+
+	}
+
+	div.di{
+		width:50%
+		margin:30px auto;
+		float: left;
+
+	}
+}
+
+
+
+.flecha_izquierda{
+  width: 5px;
+  height: 5px;
+  margin-top: 580px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right:20px solid #000;
+
+}
+
+@media screen and (min-width:768px){
+  
+  
+  .flecha_izquierda{
+    clear: both;
+  }
+
+

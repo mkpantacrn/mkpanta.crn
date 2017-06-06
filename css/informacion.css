@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #FFF;
+	width: 100%
+}
+
+
+
+.contenedor{
+	width: 100%;
+	height: 10%;
+	background: #F67D29;
+}
+
+
+
+
+#perfil {
+
+	margin: 0 auto;
+	margin-top: 5%;
+	align-items: center;
+	text-align: center;
+	
+	
+}
+#texto p {
+
+
+	text-align: center;
+	size: 1em;
+	
+}
+
+#texto img{
+	
+	margin: 0 auto;
+
+	border-radius: 20%;
+}
+
+#nombre{
+	margin-top: 60px;
+	height: 40px;
+	border: 1px solid #000;
+}
+
+
+#nombre p{
+	size: 1em;	
+	margin-top: 10px;
+	
+}
+
+#profesion{
+	margin-top: 10px;
+	height: 40px;
+
+	
+
+	border: 1px solid #000;
+	
+
+	
+}
+
+#profesion p{
+	
+	size: 1em;
+	
+	margin-top: 10px;
+}
+
+
+#edad{
+	margin-top: 10px;
+	height: 40px;
+
+	
+
+	border: 1px solid #000;
+	
+
+	
+}
+
+#edad p{
+	
+	size: 1em;
+	
+	margin-top: 10px;
+}
+
+#instrumentos{
+	margin-top: 10px;
+	height: 40px;
+
+	
+
+	border: 1px solid #000;
+	
+
+	
+}
+
+#instrumentos p{
+	
+	size: 1em;
+	
+	margin-top: 10px;
+}
+
+#estudios{
+	margin-top: 10px;
+	height: 40px;
+
+	
+
+	border: 1px solid #000;
+	
+
+	
+}
+
+#estudios p{
+	
+	size: 1em;
+	
+	margin-top: 10px;
+}
+
+#descripcion{
+	margin-top: 10px;
+	width: 100%
+	height: auto;
+
+	border: 1px solid #000;
+	
+
+	
+}
+
+#descripcio p{
+	
+	size: 1em;
+	
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#click a {
+	font-size: 1em;
+	text-decoration:none;
+	display: block;
+	color: white;
+
+	width: 100px;
+	height: 20px;
+
+	background: #F67D29; 
+	text-align: center;
+}
+
+
+
+.flecha_izquierda{
+  width: 5px;
+  height: 5px;
+ 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right:20px solid #000;
+
+}
+
+@media screen and (min-width:768px){
+  
+  #nombre{
+  	width: 100%
+  }
+
+   #profesion{
+  	width: 100%
+  }
+
+   #edad{
+  	width: 100%
+  }
+
+   #instrumentos{
+  	width: 100%
+  }
+
+   #estudios{
+  	width: 100%
+  }
+
+   
+
+  .flecha_izquierda{
+    clear: both;
+  }
+  
+
